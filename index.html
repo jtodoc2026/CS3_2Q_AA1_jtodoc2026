@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Pets n' Coffee</title>
+        <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&family=Niconne&family=Playfair+Display&family=Raleway:wght@300&display=swap" rel="stylesheet">
+    
+    
+    <style>
+        body{
+            margin:0px;    
+        }
+        ul{
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: rgb(57, 31, 15);    
+        }
+
+        
+        header li{
+            float: left;    
+        }
+
+        header ul li a{
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 15pt;
+            font-family: 'Raleway', sans-serif;
+        }
+
+        header ul li:hover{
+            background-color: rgb(87, 48, 23);
+        }
+
+        header ul b li:first-of-type{
+            background-color: rgb(57, 31, 15);
+        } 
+
+        header nav ul li:first-of-type{
+            font-weight:bold;
+        }
+
+        h1{
+            font-size: 125px;
+            color: rgb(29, 95, 134);
+            font-family: 'Playfair Display', serif;
+            margin: 0px;
+            padding-left: 25px;
+        }
+
+        h4{
+            margin: 0px;
+            padding: 0px;
+            font-size: 45px;
+            color: rgb(14, 48, 68);
+            font-family: 'Niconne', cursive;
+            text-align: center;
+        }
+
+        h5{
+            margin: 0px;
+            padding: 0px;
+            font-size: 35px;
+            color: rgb(14, 48, 68);
+            font-family: 'Playfair Display', serif;
+        }
+
+        p{
+            margin: 0px; 
+            padding: 0px;
+            font-size: 25px;
+            font-family: 'Raleway', sans-serif;
+
+        }
+
+        footer p a href{
+            text-decoration: none;
+        }
+        table{
+            margin-top: 15px;
+            margin-left: 20px;
+            border-spacing: 40px;
+            border: 3px solid rgb(87, 48, 23);
+        }
+        td{ 
+            font-size: 25px;
+            font-family: 'Playfair Display', serif;
+        }
+        footer{
+            background-color:  rgb(110, 61, 31);
+            
+        }
+        
+        footer p:first-of-type{ 
+            font-size: 23px;
+            font-weight: bolder;
+            color: black;
+            text-align: center;
+            font-family: 'Raleway', sans-serif;
+            margin: 0px;
+            padding: 10px;
+        }
+
+        footer p{ 
+            font-weight: bold;
+            color: black;
+            text-align: center;
+            font-family: 'Raleway', sans-serif;
+            margin: 0px;
+            padding: 7px;
+            font-size: 15px;
+        }     
+        
+        footer p a{
+            text-decoration: none;
+            color:black;
+        }
+        
+        #Welcome{
+            background-image: url('https://images.unsplash.com/photo-1617181669950-e0602ed26dbd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1077&q=80');
+            background-size: cover;
+            background-position: center;
+            height: 650px;
+            opacity: 0.9;
+        }
+
+        #Welcome #CafeName p{
+            font-size: 20px;
+            color: rgb(255, 255, 255);
+            font-family: 'Raleway', sans-serif;
+            margin: 0px;
+            padding-left: 25px;
+
+        }
+
+        #CafeName{
+            width: 500px;
+        }
+
+        #WhatWeDo{
+            background-image: url('https://images.pexels.com/photos/3968061/pexels-photo-3968061.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+            background-size: cover;
+            background-position: center;
+            height: 650px;
+            opacity: 0.8;
+        }
+
+        .Content{
+            background-color: rgb(215, 213, 161,0.8);
+            height: 500px;
+            padding: 15px;
+            margin-right: 20px;
+            margin-left: 20px;
+            position: relative;
+            top:10%;
+        }
+
+        .flex-container{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+        }
+
+        #video{
+            align-items:flex-end;
+            margin-top: 0px;
+            border-radius: 5px;
+        }
+        #BestSeller1{
+            background-image: url('https://images.pexels.com/photos/5749112/pexels-photo-5749112.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+            background-size: cover;
+            background-position-y: -800pt;
+            height: 650px;
+            opacity: 0.7;
+        }
+
+        #BestSeller2{
+            background-image: url('https://images.pexels.com/photos/683039/pexels-photo-683039.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+            background-size: cover;
+            background-position-y: -800pt;
+            height: 650px;
+            opacity: 0.7;
+        }
+
+    </style>
+    </head>
+
+    <body>
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="CS3_PracticeProblem1_Johana%20Todoc.html">Pets n' Coffee</a></li>
+                    <li><a href="CS3_Menu_Johana%20Todoc.html">Menu</a></li>
+                    <li><a href="CS3_Meet%20Our%20Pets!_Johana%20Todoc.html">Meet Our Pets!</a></li>
+                    <li><a href="CS3_About%20Us_Johana%20Todoc.html">About Us</a></li>
+                    <li style="float:right"><a class="active" href="#">Sign Up</a></li>
+                    <li style="float:right"><a class="active" href="#">Join Now</a></li>
+
+                </ul>
+
+            </nav>
+        </header>
+
+        <div id="Welcome">
+            <div id="CafeName">
+                <h1>Pets <br> n' <br> Coffee</h1>
+                <p>Where pets, books, music, coffee, and comfort come together to lighten your day</p>
+            </div>  
+        </div>
+        
+
+        <article id="WhatWeDo">
+            <div class="Content">
+                <h4> Come and Visit Us! We are glad to have you here!</h4>
+                <div class="flex-container">
+                    <div> 
+                        <table>
+                            <tr> 
+                                <td> <b>We Are Open Every:</b> </td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>Mondays to Fridays</td>
+                                <td>5 AM - 11 PM</td>
+                            </tr>
+                            <tr>
+                                <td>Sundays</td>
+                                <td>7 AM - 10 PM</td>
+                            </tr>
+                            <tr>
+                                <td> Entrance Fee: <br> 100php per adult <br> 50php per child </td>
+                                <td></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div>
+                        <video width="520" height="375" loop controls>
+                        <source src="pexels-amina-filkins-5405542.mp4">
+                    </video>
+                    </div>
+                  </div>
+            </div>
+        </article>
+
+        <article id="BestSeller1">
+            <div class="Content">
+                <h4> Here are our Best Sellers! </h4>
+                
+                <div class="flex-container">
+                    <div>
+                        <img src="https://i.pinimg.com/originals/4c/1b/9b/4c1b9bc5d25718a332c6b82ab460e02a.jpg" alt="Pets n' Coffee Latte" width="520" height="375">
+                    </div>
+                    <div>
+                        <h5> Pets n' Coffee Latte </h5>
+                        <p> Delicious milk coffee made up of one or two shots of <br> espresso, steamed milk and a final, thin layer of frothed milk <br> in the shape of your favorite cute cats on top!
+                        <br> <br> 150php </p>
+                    </div>
+                </div>
+            </div>
+
+        </article>
+
+        <article id="BestSeller2">
+            <div class="Content">
+                <h4> Here are our Best Sellers! </h4>
+                
+                <div class="flex-container">
+                    <div>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqHa918GDIKCA9MBb4xfYnf3WlNY69IDSMwA&usqp=CAU" alt="Pets n' Coffee Cinammon Rolls" width="400" height="450">
+                    </div>
+                    <div>
+                        <h5> Pets n' Coffee Cinammon Rolls </h5>
+                        <p> Sweet baked dough filled with a cinnamon-sugar filling; <br> Baked with care and love.
+
+                        <br> <br> Box of 6 (3pcs) - 150php </p>
+                    </div>
+                </div>
+
+            </div>
+
+    </article>
+        <footer>
+            <p><a href="CS3_About%20Us_Johana%20Todoc.html">About Us</a></p>
+            <p> 2022 All Rights Reserved | Pets n' Coffee  </p>
+        </footer>
+    </body>
+</html>   

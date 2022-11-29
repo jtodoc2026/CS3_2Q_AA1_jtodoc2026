@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Pets n' Coffee Home</title>
+    
+        <style>
+            body{
+                background-color: rgb(215, 213, 161);
+                margin: 0px; 
+            }
+
+            ul{
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: rgb(57, 31, 15);    
+            }
+
+        
+            header li{
+            float: left;    
+            }
+
+            header ul li a{
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 15pt;
+            font-family: 'Raleway', sans-serif;
+            }
+
+            header ul li:hover{
+            background-color: rgb(87, 48, 23);
+            }
+
+            header ul b li:first-of-type{
+            background-color: rgb(57, 31, 15);
+            } 
+
+            header nav ul li:first-of-type{
+            font-weight:bold;
+            }
+
+            .container {
+            position: relative;
+            }
+
+            .mySlides {
+            display: none;
+            }
+
+            .cursor {
+            cursor: pointer;
+            }
+
+            .prev,.next {
+            cursor: pointer;
+            position: absolute;
+            top: 40%;
+            width: 450px;
+            padding: 16px;
+            margin-top: -50px;
+            color: white;
+            font-weight: bold;
+            font-size: 20px;
+            border-radius: 0 3px 3px 0;
+            user-select: none;
+            -webkit-user-select: none;
+            }
+
+            .next {
+            right: 0;
+            border-radius: 3px 0 0 3px;
+            }
+
+            .prev:hover,
+            .next:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+            }
+
+            .numbertext {
+            color: #f2f2f2;
+            font-size: 12px;
+            padding: 8px 12px;
+            position: absolute;
+            top: 0;
+            }
+
+            .caption-container {
+            text-align: center;
+            background-color: #222;
+            padding: 2px 16px;
+            color: white;
+            }
+
+            .row:after {
+            content: "";
+            display: table;
+            clear: both;
+            }
+
+            .column {
+            float: left;
+            width: 16.66%;
+            padding: 10px;
+            text-align: center;
+            }
+
+            .demo {
+            opacity: 0.6;
+            }
+
+            .active,
+            .demo:hover {
+            opacity: 1;
+            }
+
+            #Content{
+            padding: 15px;
+            margin-right: 20px;
+            margin-left: 20px;
+            height:fit-content;
+
+            }
+        </style>
+      
+    </head>
+
+      <body>
+        <header>
+        <nav id="navigationBar">
+        <ul>
+            <li><a href="CS3_PracticeProblem1_Johana%20Todoc.html">Pets n' Coffee</a></li>
+            <li><a href="CS3_Menu_Johana%20Todoc.html">Menu</a></li>
+            <li><a href="CS3_Meet%20Our%20Pets!_Johana%20Todoc.html">Meet Our Pets!</a></li>
+            <li><a href="CS3_About%20Us_Johana%20Todoc.html">About Us</a></li>
+            <li style="float:right"><a class="active" href="#">Sign Up</a></li>
+            <li style="float:right"><a class="active" href="#">Join Now</a></li>
+
+        </ul>
+      </nav>
+        </header>
+
+        <div id="Content">
+        <h2>Hot Drinks</h2>
+        <div class="container">
+            <div class="mySlides">
+                <div class="numbertext">1 / 5</div>
+                  <img src="https://i.pinimg.com/originals/4c/1b/9b/4c1b9bc5d25718a332c6b82ab460e02a.jpg" alt="Pets n' Coffee Latte" style="width:100%">
+              </div>
+            
+              <div class="mySlides">
+                <div class="numbertext">2 / 5</div>
+                  <img src="https://thelittlestcrumb.com/wp-content/uploads/salted-caramel-macchiato-featured-image-1.jpg" alt="Pets n' Caramel Macchiato" style="width:100%">
+              </div>
+            
+              <div class="mySlides">
+                <div class="numbertext">3 / 5</div>
+                  <img src="http://cdn.shopify.com/s/files/1/0562/7723/7936/articles/Higgins_Coffee_at_home-10_b47f18c8-9925-49a7-9aea-0a1298ee0b4e.jpg?v=1635776410" alt="Pets n' Coffee Dark Brewed Coffee" style="width:100%">
+              </div>
+            
+              <div class="mySlides">
+                <div class="numbertext">4 / 5</div>
+                  <img src="https://thespicetrain.com/wp-content/uploads/2020/07/spiced-irish-coffee-20-1-0.jpg" alt="Pets n' Coffee Irish Coffee" style="width:100%">
+              </div>
+            
+              <div class="mySlides">
+                <div class="numbertext">5 / 5 </div>
+                  <img src="https://www.thespruceeats.com/thmb/YUR6O47J39ZT45siSiosefg5LzE=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/old-fashioned-hot-chocolate-3051520-hero-02-c25653770c4b4e5ebb5b786ee0acfc8f.jpg" alt="Pets n' Coffee Hot Chocolate" style="width:100%">
+              </div>
+
+              <div class="caption-container">
+                <p class="caption"> Pets n' Coffee Latte - 150php || Caramel Macchiato - 165php || Dark Brewed Coffee - 125php || Irish Coffee - 150php || Hot Chocolate - 100php  </p>
+              </div>
+
+              <div class="row">
+                <div class="column">
+                  <img class="demo cursor" src="https://i.pinimg.com/originals/4c/1b/9b/4c1b9bc5d25718a332c6b82ab460e02a.jpg" style="width:100%" onclick="currentSlide(1)" alt="Cafe Latte - 150php">
+                </div>
+                <div class="column">
+                  <img class="demo cursor" src="https://thelittlestcrumb.com/wp-content/uploads/salted-caramel-macchiato-featured-image-1.jpg" style="width:100%" onclick="currentSlide(2)" alt="Caramel Macchiato - 165php">
+                </div>
+                <div class="column">
+                  <img class="demo cursor" src="http://cdn.shopify.com/s/files/1/0562/7723/7936/articles/Higgins_Coffee_at_home-10_b47f18c8-9925-49a7-9aea-0a1298ee0b4e.jpg?v=1635776410" style="width:100%" onclick="currentSlide(3)" alt="Dark Brewed Coffee - 125php">
+                </div>
+                <div class="column">
+                  <img class="demo cursor" src="https://thespicetrain.com/wp-content/uploads/2020/07/spiced-irish-coffee-20-1-0.jpg" style="width:100%" onclick="currentSlide(4)" alt="Irish Coffee - 150php">
+                </div>
+                <div class="column">
+                  <img class="demo cursor" src="https://www.thespruceeats.com/thmb/YUR6O47J39ZT45siSiosefg5LzE=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/old-fashioned-hot-chocolate-3051520-hero-02-c25653770c4b4e5ebb5b786ee0acfc8f.jpg" style="width:100%" onclick="currentSlide(5)" alt="Hot Chocolate - 100php">
+                </div>
+              </div>
+            </div>
+
+        <h2>Cold Drinks</h2>
+        <div class="container">
+            <div class="mySlides">
+                <div class="numbertext">1 / 4</div>
+                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcDoNVZRlx4DX2bhOKFC1ccfriM63T1PpCjA&usqp=CAU" alt="Pets n' Coffee Iced Latte" style="width:100%">
+              </div>
+            
+              <div class="mySlides">
+                <div class="numbertext">2 / 4</div>
+                  <img src="https://livinghealthywithchocolate.com/wp-content/uploads/2015/04/Healthy-Paleo-Starbucks-Mocha-Frappuccino-Recipe-dairyfree-glutenfree-sugarfree1.jpg" alt="Pets n' Coffee Mocha Prappucino" style="width:100%">
+              </div>
+            
+              <div class="mySlides">
+                <div class="numbertext">3 / 4</div>
+                  <img src="https://www.flowersinthesalad.com/wp-content/uploads/sites/24/2020/09/dalgona-4-von-4.jpg" alt="Pets n' Coffee Iced Dalgona experiment" style="width:100%">
+              </div>
+            
+              <div class="mySlides">
+                <div class="numbertext">4 / 4</div>
+                  <img src="https://medmunch.com/wp-content/uploads/2018/10/final-4-1024x683.jpg" alt="Bery Breakfast Snacks" style="width:100%">
+              </div>
+
+              <div class="caption-container">
+                <p class="caption"> Iced Latte - 145php || Mocha Frappuccino - 150php || Iced Dalgona Coffee - 165php || Berry Breakfast Smoothies - 100php </p>
+              </div>
+
+              <div class="row">
+                <div class="column">
+                  <img class="demo cursor" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcDoNVZRlx4DX2bhOKFC1ccfriM63T1PpCjA&usqp=CAU" style="width:100%" onclick="currentSlide(1)" alt="Iced Latte - 145php">
+                </div>
+                <div class="column">
+                  <img class="demo cursor" src="https://livinghealthywithchocolate.com/wp-content/uploads/2015/04/Healthy-Paleo-Starbucks-Mocha-Frappuccino-Recipe-dairyfree-glutenfree-sugarfree1.jpg " style="width:100%" onclick="currentSlide(2)" alt="Mocha Frappuccino - 150php">
+                </div>
+                <div class="column">
+                  <img class="demo cursor" src="https://www.flowersinthesalad.com/wp-content/uploads/sites/24/2020/09/dalgona-4-von-4.jpg" style="width:100%" onclick="currentSlide(3)" alt="Iced Dalgona Coffee - 165php">
+                </div>
+                <div class="column">
+                  <img class="demo cursor" src="https://medmunch.com/wp-content/uploads/2018/10/final-4-1024x683.jpg" style="width:100%" onclick="currentSlide(4)" alt="Berry Breakfast Smoothies - 100php">
+                </div>
+            </div>
+          </div>
+            
+        <h2>Quick Bites</h2>
+        <div class="container">
+            <div class="mySlides">
+                <div class="numbertext">1 / 5</div>
+                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTc_Jhtvsa8DQI-7-0UlfYaATEnWfnvVZQEaA&usqp=CAU" alt="Pets n' Coffee Bagel" style="width:100%">
+              </div>
+            
+              <div class="mySlides">
+                <div class="numbertext">2 / 5</div>
+                  <img src="https://breadsandsweets.com/wp-content/uploads/2021/08/croissant-pic-4.jpg" alt="Pets n' Coffee Croissant" style="width:100%">
+              </div>
+            
+              <div class="mySlides">
+                <div class="numbertext">3 / 5</div>
+                  <img src="https://cdn3.tmbi.com/toh/GoogleImagesPostCard/Creamy-Pesto--n-Bacon-Eggs-Benedict_EXPS_BBBZ16_191993_05B_26_6b.jpg" alt="Pets n' Coffee Eggs Benedict" style="width:100%">
+              </div>
+            
+              <div class="mySlides">
+                <div class="numbertext">4 / 5</div>
+                  <img src="http://farm6.staticflickr.com/5345/8412110838_51cf315fa2_z.jpg" alt="Pets n' Coffee Customizable Bread Bowl" style="width:100%">
+              </div>
+
+              <div class="mySlides">
+                <div class="numbertext">5 / 5</div>
+                  <img src="https://food-images.files.bbci.co.uk/food/recipes/pumpkinsoup_89904_16x9.jpg" alt="Pets n' Coffee Pumpkin Soup" style= width:100%>
+              </div>
+
+              <div class="caption-container">
+                <p id="caption">   Bagel - 80php|| Bagel - 80php || Eggs Benedict (5pcs)- 165php ||  Customizable Bread Bowl (5pcs) - 180php || Pumpkin Soup - 85php </p>
+              </div>
+
+              <div class="row">
+                <div class="column">
+                  <img class="demo cursor" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTc_Jhtvsa8DQI-7-0UlfYaATEnWfnvVZQEaA&usqp=CAU" style="width:100%" onclick="currentSlide(1)" alt="Bagel - 80php">
+                </div>
+                <div class="column">
+                  <img class="demo cursor" src="https://cdn3.tmbi.com/toh/GoogleImagesPostCard/Creamy-Pesto--n-Bacon-Eggs-Benedict_EXPS_BBBZ16_191993_05B_26_6b.jpg" style="width:100%" onclick="currentSlide(3)" alt=" Eggs Benedict (5pcs)- 165php">
+                </div>
+                <div class="column">
+                  <img class="demo cursor" src="https://breadsandsweets.com/wp-content/uploads/2021/08/croissant-pic-4.jpg" style="width:100%" onclick="currentSlide(2)" alt="Croissant - 110php">
+                </div>
+                <div class="column">
+                  <img class="demo cursor" src="http://farm6.staticflickr.com/5345/8412110838_51cf315fa2_z.jpg" style="width:100%" onclick="currentSlide(4)" alt="Customizable Bread Bowl (5pcs) - 180php">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="https://food-images.files.bbci.co.uk/food/recipes/pumpkinsoup_89904_16x9.jpg" style="width:100%" onclick="currentSlide(5)" alt="Pumpkin Soup - 85php">
+                  </div>
+            </div>
+
+                <h2>Pastries</h2>
+            <div class="container">
+              <div class="mySlides">
+                <div class="numbertext">1 / 5</div>
+                  <img src="https://www.kingarthurbaking.com/sites/default/files/styles/featured_image/public/recipe_legacy/6-3-large.jpg?itok=TYPidbAr" alt="Pets n' Coffee Chocolate Chip Cookies (1 box)" style=width:100%>
+              </div>
+            
+              <div class="mySlides">
+                <div class="numbertext">2 / 5</div>
+                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9w755cAKi0k_P3wRdX5EEf2GLEJU5zym1Sg&usqp=CAU" alt="Pets n' Coffee Fruit Pie" style="width:100%">
+              </div>
+            
+              <div class="mySlides">
+                <div class="numbertext">3 / 5</div>
+                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqHa918GDIKCA9MBb4xfYnf3WlNY69IDSMwA&usqp=CAU" alt="Pets n' Coffee Cinammon Rolls" style="width:100%">
+              </div>
+            
+              <div class="mySlides">
+                <div class="numbertext">4 / 5</div>
+                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0dqiMc7fde9A7Ou7Xa6XTp1UmdpBVfE335b_r5ejBij4QeLfz2qVfKdXVRxMLgOdpYSo&usqp=CAU" alt="Pets n' Coffee  Banana Cake" style="width:100%">
+              </div>
+
+              <div class="mySlides">
+                <div class="numbertext">5 / 5</div>
+                  <img src="https://dailyyum.com/wp-content/uploads/2018/11/Instant-Pot-Creme-Brulee-recipe-480x480.jpg" alt= " Pets n' Coffee Creme Brulee" style= "width:100%">
+              </div>
+
+              <div class="caption-container">
+                <p class="caption"> Chocolate Chip Cookies (1 box) - 100php || Fruit Pie || Cinammon Rolls (5pcs) - 130php || Banana Cake - 110php || Creme Brulee - 80php </p>
+              </div>
+
+              <div class="row">
+                <div class="column">
+                  <img class="demo cursor" src="https://www.kingarthurbaking.com/sites/default/files/styles/featured_image/public/recipe_legacy/6-3-large.jpg?itok=TYPidbAr" style="width:100%" onclick="currentSlide(1)" alt="Chocolate Chip Cookies (1 box) - 130php">
+                </div>
+                <div class="column">
+                  <img class="demo cursor" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0dqiMc7fde9A7Ou7Xa6XTp1UmdpBVfE335b_r5ejBij4QeLfz2qVfKdXVRxMLgOdpYSo&usqp=CAU" style="width:100%" onclick="currentSlide(4)" alt="Fruit Pie - 180php">
+                </div>
+                <div class="column">
+                  <img class="demo cursor" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqHa918GDIKCA9MBb4xfYnf3WlNY69IDSMwA&usqp=CAU" onclick="currentSlide(3)" alt=" Cinammon Rolls (5pcs) - 130php">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="https://dailyyum.com/wp-content/uploads/2018/11/Instant-Pot-Creme-Brulee-recipe-480x480.jpg" style="width:100%" onclick="currentSlide(5)" alt="Creme Brulee - 80php">
+                  </div>
+                <div class="column">
+                  <img class="demo cursor" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9w755cAKi0k_P3wRdX5EEf2GLEJU5zym1Sg&usqp=CAU" style="width:100%" onclick="currentSlide(2)" alt="Banana Cake - 110php">
+                </div>
+            </div>     
+          </div>
+        </div>
+        </div>
+    </body>
+
+</html>
